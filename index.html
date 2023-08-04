@@ -322,10 +322,151 @@
 </div>
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
-	<h2 id="Ethics-Statement" style="text-align: center;">Ethics Statement</h2>
-	<p>
-	To avoid abuse, Well-trained models and services will not be provided.
-	</p>
+		<h2 id="cross-lingual-tts" style="text-align: center;">Zero-shot cross-lingual text-to-speech</h2>
+			<p>
+			English TTS with Chinese prompts (English samples are from LibriSpeech, Chinese samples are from EMIME and AISHELL-3 dataset)
+			</p>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">English Text</th>
+			<th style="text-align: center">Speaker Prompt</th>
+			<th style="text-align: center">Baseline</th>
+			<th style="text-align: center">MS's VALL-E X</th>
+			<th style="text-align: center">reproduced VALL-E X</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">Look a little closer while our guide lets the light of his lamp fall upon the black wall at your side.</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/1/xtts_aishell2libri_518_ch_prompts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/1/xtts_aishell2libri_518_en_baseline.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/1/xtts_aishell2libri_518_en_ar01lid2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/1/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">He honours whatever he recognizes in himself, such morality equals self-glorification.</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/2/xtts_emime2libri_729_ch_prompts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/2/xtts_emime2libri_729_en_baseline.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/2/xtts_emime2libri_729_en_ar01lid2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/2/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">One dark night at the head of a score of his tribe, he fell upon Wabigoon’s camp, his object being the abduction of the princess.</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/3/xtts_emime2libri_905_ch_prompts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/3/xtts_emime2libri_905_en_baseline.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/3/xtts_emime2libri_905_en_ar01lid2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/3/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">There could be little art in this last and final round of fencing.</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/4/xtts_aishell2libri_34_ch_prompts.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/4/xtts_aishell2libri_34_en_baseline.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/4/xtts_aishell2libri_34_en_ar01lid2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/zh2en_tts/4/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+			<p>
+			Chinese TTS with English prompts (Chinese samples are from EMIME and AISHELL-3, English samples are from LibriSpeech dataset)
+			</p>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">English Text</th>
+			<th style="text-align: center">Speaker Prompt</th>
+			<th style="text-align: center">MS's VALL-E X</th>
+			<th style="text-align: center">reproduced VALL-E X</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">坚持房地产调控政策不动摇。</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_tts/1/xtts_ref_output_238_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_tts/1/xtts_output_238_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_tts/1/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">值得关注的是从二零一零年到二零一四年。</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_tts/2/xtts_ref_output_576_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_tts/2/xtts_output_576_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_tts/2/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">两千六百四十八万二千五百四十六。</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_tts/3/xtts_ref_output_590_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_tts/3/xtts_output_590_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_tts/3/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">汇聚部分全球领先品牌的下一代技术创新。</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_tts/4/xtts_ref_output_591_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_tts/4/xtts_output_591_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_tts/4/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+</div>
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+		<h2 id="foreign-accent-control" style="text-align: center;">Foreign accent control</h2>
+
+			<p>
+			1) English to Chinese on EMIME dataset.
+			</p>
+
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Speaker Prompt</th>
+			<th style="text-align: center">Ground Truth</th>
+			<th style="text-align: center">MS's VALL-E X with Chinese LID</th>
+			<th style="text-align: center">MS's VALL-E X with English LID</th>
+			<th style="text-align: center">reproduced VALL-E X with Chinese LID</th>
+			<th style="text-align: center">reproduced VALL-E X with English LID</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/1/LID_enzh_emime_en_43_truth.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/1/LID_enzh_emime_zh_43_truth.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/1/LID_enzh_emime_en2zh_43_ar01lid1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/1/LID_enzh_emime_en2zh_43_ar01lid2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/1/audio_zhID.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/1/audio_enID.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/2/LID_enzh_MF1_ENG_0002_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/2/LID_enzh_MF1_MAN_0002_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/2/LID_enzh_output_with_ZH_LID_MF1_ENG_0002_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/2/LID_enzh_output_with_EN_LID_MF1_ENG_0002_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/2/audio_zhID.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/2/audio_enID.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/3/LID_enzh_emime_en_252_truth.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/3/LID_enzh_emime_zh_252_truth.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/3/LID_enzh_emime_en2zh_252_ar01lid1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/3/LID_enzh_emime_en2zh_252_ar01lid2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/3/audio_zhID.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/3/audio_enID.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/4/LID_enzh_emime_en_266_truth.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/4/LID_enzh_emime_zh_266_truth.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/4/LID_enzh_emime_en2zh_266_ar01lid1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/4/LID_enzh_emime_en2zh_266_ar01lid2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/4/audio_zhID.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/en2zh_accent/4/audio_enID.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
 </div>
 
 </article>
