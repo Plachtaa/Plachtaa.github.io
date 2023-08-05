@@ -469,6 +469,94 @@
 		</div>
 </div>
 
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+		<h2 id="cross-lingual-emotion-maintenance" style="text-align: center;">Voice emotion maintenance</h2>
+
+			<p>
+			VALL-E X Trans can synthesize personalized target speech while maintaining the emotion in the source speech.
+				The source audio are sampled from the Emotional Voices Database EmoV-DB.
+			</p>
+
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Emotion</th>
+			<th style="text-align: center">English Speech</th>
+			<th style="text-align: center">MS's VALL-E X Trans</th>
+			<th style="text-align: center">reproduced VALL-E X Trans</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">Neutral</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/neutral/emotion_output_4162_neutral_85-112_0097.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/neutral/emotion_output_4162_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/neutral/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">Amused</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/amused/emotion_output_3872_amused_85-112_0110.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/amused/emotion_output_3872_28_2_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/amused/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">Sleepiness</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/sleepy/emotion_output_1455_sleepiness_253-280_0253.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/sleepy/emotion_output_1455_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/sleepy/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">Anger</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/anger/emotion_output_5249_anger_367-392_0368.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/anger/emotion_output_5249_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/anger/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">Disgust</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/disgusted/emotion_output_5712_disgust_336-364_0364.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/disgusted/emotion_output_5712_decompressed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/emotion/disgusted/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+</div>
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="japanese-cross-lingual" style="text-align: center;">Japanese zero-shot cross-lingual text-to-speech</h2>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Text</th>
+			<th style="text-align: center">Speaker Prompt</th>
+			<th style="text-align: center">reproduced VALL-E X</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr><td style="text-align: left;vertical-align:middle;width: 600px">Instead of shoes, the old man wore boots with turnover tops, and his blue coat had wide cuffs of gold braid.</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/jp2en_tts/1/prompt.ogg" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/jp2en_tts/1/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">The army found the people in poverty and left them in comparative wealth.</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/jp2en_tts/2/prompt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/jp2en_tts/2/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">Thus did this humane and right minded father comfort his unhappy daughter, and her mother embracing her again, did all she could to soothe her feelings.</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/jp2en_tts/3/prompt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/jp2en_tts/3/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">He was in deep converse with the clerk and entered the hall holding him by the arm.</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/jp2en_tts/4/prompt.mp3" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/vallex/jp2en_tts/4/audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+</div>
 </article>
 </main>
 </div>
