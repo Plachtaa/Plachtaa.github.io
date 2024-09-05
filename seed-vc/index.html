@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.88.1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+	<link rel="stylesheet" href="../css/custom.css">
+	<link rel="stylesheet" href="../css/normalize.css">
+
+	<title>Seed-VC</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+
+<div class="container" >
+<header role="banner">
+</header>
+<main role="main">
+<article itemscope itemtype="https://schema.org/BlogPosting">
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<div class="text-center">
+	<h1 style="text-align: center">
+        Seed-VC
+    </h1>
+	</div>
+	<p>
+        Seed-VC is named after Seed-TTS as the method and training scheme is inspired by the paper's description about voice conversion.<br><br>
+		We may change name based on future development of this project.<br><br>
+		This page is for showing results and comparisons only. The examples of other VC models are directly retrieved from their demo pages.
+    </p>
+
+</div>
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+		<h2 id="comparison-with-others" style="text-align: center;">Zero-shot Voice Conversion</h2>
+			<p>
+			We present our results of zero-shot voice conversion comparing to other previous released/published voice conversion models. <br>
+				We demonstrate our model has comparable if not superior performance to the previous models. The results are shown below.
+			</p>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Source Audio</th>
+			<th style="text-align: center">Timbre Prompt</th>
+			<th style="text-align: center">Mulli VC</th>
+			<th style="text-align: center">Consistency VC</th>
+			<th style="text-align: center">DiffHier VC</th>
+			<th style="text-align: center">Free VC</th>
+			<th style="text-align: center">Seed-VC (ours)</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/sources/s5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/s5p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/mulli_s5p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/consistency_s5p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/diff_s5p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/free_s5p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s5_s5p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/sources/s6.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/s6p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/mulli_s6p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/consistency_s6p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/diff_s6p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/free_s6p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s6_s6p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/sources/s7.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/s7p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/mulli_s7p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/consistency_s7p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/diff_s7p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/free_s7p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s7_s7p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/sources/s8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/s8p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/mulli_s8p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/consistency_s8p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/diff_s8p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/free_s8p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s8_s8p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+</div>
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+		<h2 id="Celebrities and Anime Characters" style="text-align: center;">Celebrities and Anime Characters</h2>
+			<p>
+			Seed-VC can mimic the voices of celebrities or characters from animated shows. We present these examples for purely research purposes.
+			</p>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Source Audio</th>
+			<th style="text-align: center">Celeb</th>
+			<th style="text-align: center">Timbre Prompt</th>
+			<th style="text-align: center">Seed-VC Converted</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td rowspan="4" style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/sources/s9.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: left;vertical-align:middle;width: 500px">Donald Trump</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/trump_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_trump.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">Benedict Cumberbatch</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/Ben_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_ben.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">周杰伦 (Jay Chou)</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/jay_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_jay.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">丁真 (Zhen Ding)</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/dingzhen_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_dingzhen.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+</div>
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Source Audio</th>
+			<th style="text-align: center">Anime/Game Character</th>
+			<th style="text-align: center">Timbre Prompt</th>
+			<th style="text-align: center">Seed-VC Converted</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td rowspan="5" style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/sources/s9.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: left;vertical-align:middle;width: 500px">Rick (from Rick and Morty)</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/rick_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_rick.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">Morty (from Rick and Morty)</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/morty_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_morty.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">后羿 (Houyi)</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/houyi_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_houyi.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">八重神子 (Yae Miko)</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/yae_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_yae.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: left;vertical-align:middle;width: 500px">Glados (from Portal)</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/glados_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_glados.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+</div>
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+		<h2 id="Talking Pace Control" style="text-align: center;">Talking Pace Control</h2>
+		<p>
+		Seed-VC can easily control the talking pace of the converted audio.
+		</p>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Source Audio</th>
+			<th style="text-align: center">Timbre Prompt</th>
+			<th style="text-align: center">Length</th>
+			<th style="text-align: center">Seed-VC Converted</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td rowspan="4" style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/sources/s9.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td rowspan="4" style="text-align: left;vertical-align:middle;width: 500px"><audio controls="controls" style="width: 140px;"><source src="demos/references/cafe_0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center">x0.5</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_cafe_0.5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center">x1.0</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_cafe_1.0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center">x1.5</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_cafe_1.5.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center">x2.0</td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/s9_cafe_2.0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+</div>
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+		<h2 id="comparison-with-seedtts" style="text-align: center;">VS Seed-TTS Demo</h2>
+			<p>
+			We compare our result with the ones presented in Seed-TTS's demo page. <br>
+				The current released checkpoint has reached close to the performance of the Seed-TTS's VC model. The results are shown below.
+			</p>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Language</th>
+			<th style="text-align: center">Source Audio</th>
+			<th style="text-align: center">Timbre Prompt</th>
+			<th style="text-align: center">Seed-TTS</th>
+			<th style="text-align: center">Seed-VC (ours)</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td rowspan="4" style="text-align: left;vertical-align:middle;width: 500px">EN</td>
+			<td rowspan="2" style="text-align: center;vertical-align:middle;width: 220px"><audio controls="controls" style="width: 140px;"><source src="demos/sources/source_s1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/s1p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/seedtts_s1_s1p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/source_s1_s1p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/s1p2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/seedtts_s1_s1p2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/source_s1_s1p2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td rowspan="2" style="text-align: center;vertical-align:middle;width: 220px"><audio controls="controls" style="width: 140px;"><source src="demos/sources/source_s2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/s2p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/seedtts_s2_s2p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/source_s2_s2p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/s2p2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/seedtts_s2_s2p2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/source_s2_s2p2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td rowspan="4" style="text-align: left;vertical-align:middle;width: 500px">ZH</td>
+			<td rowspan="2" style="text-align: center;vertical-align:middle;width: 220px"><audio controls="controls" style="width: 140px;"><source src="demos/sources/source_s3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/s3p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/seedtts_s3_s3p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/source_s3_s3p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/s3p2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/seedtts_s3_s3p2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/source_s3_s3p2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td rowspan="2" style="text-align: center;vertical-align:middle;width: 220px"><audio controls="controls" style="width: 140px;"><source src="demos/sources/source_s4.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/s4p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/seedtts_s4_s4p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/source_s4_s4p1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			<tr>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/references/s4p2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/others/seedtts_s4_s4p2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			<td style="text-align: center"><audio controls="controls" style="width: 140px;"><source src="demos/converted/source_s4_s4p2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+</div>
+</article>
+</main>
+</div>
+
+</body>
+</html>
